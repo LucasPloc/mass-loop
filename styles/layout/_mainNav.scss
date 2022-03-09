@@ -1,0 +1,107 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 4.5rem 11rem 8.4rem 11rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  background-color: $main-light;
+  padding-bottom: 1.9rem;
+  box-shadow: 0px 4px 24px -5px #00000026;
+
+  @media screen and (max-width: 1250px) {
+    padding: 4.5rem 4rem 8.4rem 4rem;
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 5.9rem 2rem 1.9rem 2rem;
+  }
+
+  &__logo {
+    img {
+      height: 5.1rem;
+      width: 11.9rem;
+    }
+  }
+
+  &__links {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+
+    a {
+      color: $main-dark;
+
+      &:not(:last-child) {
+        margin-right: 4.7rem;
+      }
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+      margin-right: 2.7rem;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2rem;
+
+      @media screen and (max-width: 1000px) {
+        margin-right: 2.9rem;
+      }
+
+      span:last-child {
+        height: 0.51rem;
+        width: 0.9rem;
+      }
+
+      span:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+
+    button {
+      margin-top: -0.4rem;
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+  &__menu {
+    display: none;
+    img {
+      width: 3.6rem;
+      height: 2.6rem;
+    }
+    img:first-child {
+      display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+  }
+}
+
+.cross-icon {
+  z-index: 99999;
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: initial !important;
+}

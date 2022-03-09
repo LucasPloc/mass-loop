@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link href="/build/styles/main.css" rel="stylesheet"></link>
+    <title>Mass loop</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="main-nav__logo">
+        <img src="/images/logo.png" alt="Mass Loop">
+      </div>
+      <div class="main-nav__links">
+        <a href="#">Policz zyski</a>        
+        <a href="#">O produkcie</a>
+        <a href="#">Kontakt</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="main-nav__button-container">
+        <div class="main-nav__button-container__wrapper">
+          <span>PL</span>
+          <span><img src="/images/arrow.png" alt="arrow down"/></span>
+        </div>
+        <button class="button button--small">KUP</button>
+        <div class="main-nav__menu">
+          <img class="menu-icon show" src="/images/menu.png" alt="menu"/>
+          <img class="cross-icon hidden"  src="/images/cross-icon.png" alt="menu"/>
+        </div>
+      </div>
+    </nav>
+    <nav class="mobile-nav hidden">
+      <a href="#">Policz zyski</a>        
+      <a href="#">O produkcie</a>
+      <a href="#">Kontakt</a>
+      <a href="#">FAQ</a>
+      <button class="button button--big">KUP</button>
+    </nav>
+     <header class="header">
+      <h1 class="header__title">
+        <span>Inteligentna kruszarka, która</span>
+        <span>zamienia szkło w piasek.</span>
+      </h1>
+      <div class="header__image">
+        <img src="/images/header-image.png" alt="product"/>
+        <div class="header__image-icon">
+          <img src="/images/bag-icon.png" alt="bag"/>
+        </div>
+      </div>
+      <div class="header__banner">
+        <h2 class="header__banner-title">
+          <span>Płać 5 razy mniej za wywóz</span> 
+          <span>odpadów szklanych.</span>
+        </h2>
+        <p class="header__banner-description">
+          <span>
+            Kruszarka zmniejsza gabaryty szklanych śmieci, 
+            a Ty płacisz PIĘ-CIO-
+          </span>
+          <span>
+            KROT-NIE niższe rachunki za ich wywóz.
+          </span>
+        </p>
+      </div>
+    </header>
+    
+    <section class="calculator">
+      <div class="calculator__title">
+        <h2>Ile zaoszczędzisz?</h2>
+        <span>Rachunek jest prosty.</span>
+      </div>
+      <div class="calculator__fields">
+        <div class="calculator__field">
+          <h3 class="calculator__field-title">
+            <span>Ile pojemników na szkło</span>
+            <span>zapełniasz miesięcznie?</span> 
+          </h3>
+          <input />
+        </div>
+        <div class="calculator__field">
+          <h3 class="calculator__field-title">
+            <span>Ile płacisz za wywóz jednego</span>
+            <span>pojemnika na szkło?</span>
+          </h3>
+          <input />
+        </div>
+      </div>
+      <div class="calculator__result">
+        <span class="calculator__result--1">Dzięki kruszarce zaoszczędzisz</span>
+        <span class="calculator__result--2">900 zł</span>
+        <span class="calculator__result--3">rocznie.</span>
+      </div>
+      <div class="calculator__button-wrapper">
+        <span class="calculator__question"></span>
+        <button class="button button--big">KUP <span>8499zł</span></button>
+        <div class="calculator__slogan">
+          <span>Brzmi dobrze? Uważaj.</span> 
+          <span>Dopiero się rozkręcamy!</span>
+        </div>
+      </div>
+    </section>
+    <script src="/index.js"></script>
+  </body>
+</html>
